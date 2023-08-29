@@ -8,8 +8,9 @@
 html {
   scroll-behavior: smooth;
   font-family: "Vesper Libre", serif;
-  background-image: url(hbg.jpg)  ;
-  background-size: 100%;
+  background-image: url(background.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: 100% 100%;
 }
 
 /* custom scroll bar */
@@ -27,26 +28,32 @@ html {
   background: #555;
 }
 
-section{
+section {
   padding: 30px 0;
 }
-.max-width{
+.max-width {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
 
-
+p {
+  color: #900001;
+  font-size: 18px;
+  text-align: justify;
+}
+h1 {
+  color: #900001;
+}
 
 .scroll-up-btn {
   position: fixed;
-  height: 45px;
+  height: 42px;
   width: 42px;
   background: #900001;
-  right: 20px;
+  right: 30px;
   bottom: 10px;
   text-align: center;
-  line-height: 45px;
   color: #ffdbac;
   z-index: 100;
   font-size: 30px;
@@ -63,7 +70,10 @@ section{
   pointer-events: auto;
 }
 .scroll-up-btn:hover {
-  filter: brightness(90%);
+  filter: brightness(85%);
+}
+.scroll-up-btn i:hover {
+  color: #fff;
 }
 .header-logo {
   cursor: pointer;
@@ -79,7 +89,7 @@ section{
   font-family: "Vesper Libre", serif;
   padding: 5px;
 }
-.logo{
+.logo {
   display: flex;
   align-items: center;
   margin-left: 50px;
@@ -115,6 +125,7 @@ nav {
 
 nav .nav-items {
   display: flex;
+  align-items: center;
   flex: 1;
   padding: 0 0 0 40px;
   justify-content: center;
@@ -152,23 +163,26 @@ nav .cancel-icon {
   display: none;
 }
 
-.info{
-  /* height: 100vh; */
-  display:flex;
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center;
-}
-
-.heading{
+.heading {
   border-top: 1px solid #900001;
   border-bottom: 1px solid #900001;
 }
-.heading .head{
+.heading .head {
   color: #900001;
+  font-size: 35px;
 }
-
-
+.Committee {
+  width: 100%;
+  height: 100%;
+}
+.Donation {
+  width: 100%;
+  height: 95vh;
+}
+.txt {
+  text-align: center;
+  font-size: 26px;
+}
 
 @media (max-width: 980px) {
   .header-logo {
@@ -177,7 +191,7 @@ nav .cancel-icon {
     padding: 3px;
     align-items: center;
   }
-  .logo{
+  .logo {
     display: flex;
     align-items: center;
     margin-left: 15px;
@@ -203,7 +217,7 @@ nav .cancel-icon {
     padding: 3px;
     align-items: center;
   }
-  .logo{
+  .logo {
     display: flex;
     align-items: center;
     margin-left: 15px;
@@ -238,13 +252,13 @@ nav .cancel-icon {
   nav .nav-items {
     position: fixed;
     z-index: 99;
-    top: 60px;
+    top: 50px;
     width: 100%;
     left: -100%;
-    /* height: 100%; */
-    padding: 10px 50px 0 50px;
+    height: 100%;
+    padding: 0px 50px 0 50px;
     text-align: center;
-    background: #b08e8e;
+    background: #900001;
     display: inline-block;
     transition: left 0.3s ease;
   }
@@ -271,26 +285,38 @@ nav .cancel-icon {
   nav .cancel-icon.show {
     display: block;
   }
-  .cancel-icon{
+  .cancel-icon {
     z-index: 100;
   }
 }
 
 @media (max-width: 980px) {
   nav .menu-icon,
-  nav .cancel-icon{
+  nav .cancel-icon {
     margin: 0 20px;
   }
   nav form {
     right: 30px;
   }
-  .max-width{
+  .max-width {
     padding: 0 50px;
-}
+  }
 }
 @media (max-width: 690px) {
-  .max-width{
-      padding: 0 23px;
+  .max-width {
+    padding: 0 23px;
+  }
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 35px;
+    width: 35px;
+    font-size: 23px;
+    /* line-height: 38px; */
+  }
+  .txt {
+    text-align: center;
+    font-size: 20px;
   }
 }
 
