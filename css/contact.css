@@ -21,7 +21,7 @@ html{
 section{
     padding: 30px 0;
 }
-.max-width{
+.max-width-contact{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
@@ -101,7 +101,7 @@ section .title{
 .contact .right form .textarea textarea{
     height: 100%;
     width: 100%;
-    border: 1px solid lightgrey;
+    border: 1px solid darkgrey;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -158,7 +158,7 @@ section .title{
 }
 
 @media (max-width: 690px) {
-    .max-width{
+    .max-width-contact{
         padding: 0 23px;
     }
 }

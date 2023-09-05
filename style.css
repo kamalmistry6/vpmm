@@ -38,7 +38,7 @@ section {
 }
 .max-width {
   max-width: 1300px;
-  padding: 0 80px;
+  padding: 50px 80px;
   margin: auto;
 }
 p {
@@ -48,36 +48,6 @@ p {
 }
 h1 {
   color: var(--secondary-text-color);
-}
-
-.scroll-up-btn {
-  position: fixed;
-  height: 42px;
-  width: 42px;
-  background: #900001;
-  right: 30px;
-  bottom: 10px;
-  text-align: center;
-  color: #ffdbac;
-  z-index: 100;
-  font-size: 30px;
-  border-radius: 6px;
-  border-bottom-width: 2px;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-.scroll-up-btn.show {
-  bottom: 30px;
-  opacity: 1;
-  pointer-events: auto;
-}
-.scroll-up-btn:hover {
-  filter: brightness(85%);
-}
-.scroll-up-btn i:hover {
-  color: #fff;
 }
 .header-logo {
   cursor: pointer;
@@ -185,20 +155,12 @@ footer p {
 
   }
   .max-width {
-    padding: 0 50px;
+    padding: 50px 50px;
   }
 }
 @media (max-width: 690px) {
   .max-width {
-    padding: 0 23px;
-  }
-  .scroll-up-btn {
-    right: 15px;
-    bottom: 15px;
-    height: 35px;
-    width: 35px;
-    font-size: 23px;
-    /* line-height: 38px; */
+    padding: 50px 23px;
   }
   .txt {
     text-align: center;
