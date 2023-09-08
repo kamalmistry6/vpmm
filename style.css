@@ -38,7 +38,8 @@ section {
 }
 .max-width {
   max-width: 1300px;
-  padding: 50px 80px;
+  /* padding: 50px 80px; */
+  padding: 50px 80px 25px 80px;
   margin: auto;
 }
 p {
@@ -160,7 +161,7 @@ footer p {
 }
 @media (max-width: 690px) {
   .max-width {
-    padding: 50px 23px;
+    padding: 50px 23px 25px 23px;
   }
   .txt {
     text-align: center;

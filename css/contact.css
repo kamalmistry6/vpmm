@@ -141,12 +141,19 @@ section .title{
   background: none;
 }
 
+.map-location{
+    width:100%; 
+    height:500px; 
+    border-radius: 6px;
+    border: 2px solid #900001;
+}
+
 
 /* responsive media query start */
 
 
 @media (max-width: 991px) {
-    .max-width{
+    .max-width-contact{
         padding: 0 50px;
     }
 }
@@ -160,6 +167,10 @@ section .title{
 @media (max-width: 690px) {
     .max-width-contact{
         padding: 0 23px;
+    }
+    .map-location{
+        width:100%; 
+        height:200px; 
     }
 }
 

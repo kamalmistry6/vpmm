@@ -48,7 +48,7 @@ html {
   transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
-  color: crimson;
+  color: #fff;
 }
 /* .navbar.sticky .menu li a:hover {
   color: #fff;
