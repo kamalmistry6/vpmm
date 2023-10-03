@@ -23,7 +23,7 @@ section{
 }
 .max-width-contact{
     max-width: 1300px;
-    padding: 0 80px;
+    padding:50px 80px 25px 80px;
     margin: auto;
 }
 .contact{
@@ -154,7 +154,7 @@ section .title{
 
 @media (max-width: 991px) {
     .max-width-contact{
-        padding: 0 50px;
+        padding: 50px 50px;
     }
 }
 @media (max-width: 947px){
@@ -166,7 +166,7 @@ section .title{
 
 @media (max-width: 690px) {
     .max-width-contact{
-        padding: 0 23px;
+        padding:50px 23px 25px 23px;
     }
     .map-location{
         width:100%; 
