@@ -181,7 +181,7 @@
     <section class="contact" id="Contact">
         <div class="max-width-contact">
             <div class="heading">
-                <h1 style="text-align: center;" class="head">Contact me</h1>
+                <h1 style="text-align: center;" class="head">Contact US</h1>
             </div>
             <br>
             <br>
@@ -212,29 +212,40 @@
                     </div>
                 </div>
                 <div class="column right">
-                    <div style="color: #900001;" class="text">Message me</div>
+                    <div style="color: #900001;" class="text">Message Us</div>
                     <form action="#">
                         <div class="fields">
                             <div class="field name">
-                                <input style="background: transparent;" type="text" placeholder="Name" required>
+                                <input style="background: transparent;" type="text" id="Name" placeholder="Name" required>
+
+                                <!-- <input style="background: transparent;" type="text" placeholder="Name" required> -->
                             </div>
                             <div class="field email">
-                                <input style="background: transparent;" type="email" placeholder="Email" required>
+                                <input style="background: transparent;" type="text" id="Email" placeholder="Email" required>
+
+                                <!-- <input style="background: transparent;" type="email" placeholder="Email" required> -->
                             </div>
                         </div>
                         <div class="field">
-                            <input style="background: transparent;" type="text" placeholder="Subject" required>
+                            <input style="background: transparent;" type="text" id="subject"  placeholder="Subject" required>
+
+                            <!-- <input style="background: transparent;" type="text" placeholder="Subject" required> -->
                         </div>
                         <div class="field textarea">
-                            <textarea style="background: transparent;" cols="30" rows="10" placeholder="Message.."
-                                required></textarea>
+                            <input style="background: transparent;" name="message" id="message" cols="30" rows="10" placeholder="Message.." required></input>
+
+                            <!-- <textarea style="background: transparent;" cols="30" rows="10" placeholder="Message.." required></textarea> -->
                         </div>
                         <div class="button-area">
-                            <button type="submit">Send message</button>
+                            <input class="button" type="button" value="Send message" onclick="Send()">
+
+                            <!-- <button type="submit">Send message</button> -->
                         </div>
                     </form>
                 </div>
             </div>
+
+
             <br>
             <iframe class="map-location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d813.1494731249279!2d72.76442422842469!3d19.696280461488048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be71ce76c3b5297%3A0xa01377be35b86a0!2sVrindavan%20Park!5e1!3m2!1sen!2sin!4v1694155137104!5m2!1sen!2sin"
@@ -247,6 +258,8 @@
         <p>Copyright © 2023, All Reserved | वृंदावन पार्क मित्र मंडळ</p>
     </footer>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="script.js"></script>
 </body>
 
