@@ -47,8 +47,13 @@ html {
   margin-left: 25px;
   transition: color 0.3s ease;
 }
+.navbar .menu li a:active,
 .navbar .menu li a:hover {
   color: #fff;
+}
+.navbar .menu li:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 /* .navbar.sticky .menu li a:hover {
   color: #fff;
@@ -108,7 +113,7 @@ html {
     height: 100vh;
     width: 100%;
     left: -100%;
-    top: 0;
+    top: 60px;
     background: transparent;
     backdrop-filter: blur(40px);
     text-align: center;
