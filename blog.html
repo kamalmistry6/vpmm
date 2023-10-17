@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="blog.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="css/nav2.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -13,7 +12,18 @@
     <style></style>
 </head>
 
-<body>
+<body onload="myFunction()">
+
+    <div id="preloader">
+    </div>
+
+    <script>
+        var preloader = document.getElementById("preloader");
+
+        function myFunction() {
+            preloader.style.display = 'none'
+        }
+    </script>
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -36,7 +46,7 @@
                 <!-- <li><a href="#Contact Us">Contact Us</a></li> -->
                 <li class="social">
                     <a href=""><i class="fa-brands fa-instagram fa-bounce" id="insta"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook fa-bounce" id="facebook" ></i></a>
+                    <a href=""><i class="fa-brands fa-facebook fa-bounce" id="facebook"></i></a>
                     <a href=""><i class="fa-brands fa-youtube fa-bounce" id="youtube"></i></a>
                 </li>
             </ul>
@@ -120,7 +130,7 @@
                     <!-- <a href="#" class="blog-post_cta">Read More</a> -->
                 </div>
             </div>
-            
+
             <div class="blog-post">
                 <div class="blog-post_img">
                     <img src="img/logo.png" alt="">
@@ -136,7 +146,8 @@
                         वृंदावन पार्क हे पालघर मधील सर्वात जुने आणि प्रतिष्ठित मंडळ आहे.मंडळाची स्थापना २००४ साली झाली.
                         <br><br>
                         सन २० साली गणेशाची कीर्ती लोकांच्या मनात आणि भक्तांच्या चेहऱ्यावर सहजतेने व्हावी यासाठी गणेशाला
-                        ‘पालघरचा राजा’ म्हणून प्रसिद्धी द्यावी, असा प्रस्ताव मांडण्यात आला होता. बहारदार कार्यक्रमात मंडळाने
+                        ‘पालघरचा राजा’ म्हणून प्रसिद्धी द्यावी, असा प्रस्ताव मांडण्यात आला होता. बहारदार कार्यक्रमात
+                        मंडळाने
                         आपला गणेश "पालघरचा राजा" म्हणून सादर केला.
                     </p>
                     <!-- <a href="#" class="blog-post_cta">Read More</a> -->
