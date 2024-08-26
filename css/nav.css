@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&family=Vesper+Libre:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Vesper Libre", serif;
+}
+
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 15px 0;
+  transition: all 0.3s ease;
+  background-color: #900001;
+  align-items: center;
+}
+.navbar.sticky {
+  background: #900001;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: #ffdbac;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar .menu-list {
+  display: inline-flex;
+}
+.menu-list li {
+  list-style: none;
+  position: relative;
+}
+.navbar .menu-list .social {
+  display: none;
+}
+.menu-list li a {
+  color: #ffdbac;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.menu-list li a:hover {
+  color: #FFF;
+}
+
+.banner {
+  background: url("banner.jpg") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about {
+  padding: 30px 0;
+}
+.about .title {
+  font-size: 38px;
+  font-weight: 700;
+}
+.about p {
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+#insta {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: 900;
+}
+#facebook{
+  font-size: 30px;
+  font-weight: 600;
+  color: #4267B2;
+}
+#youtube{
+  font-size: 30px;
+  font-weight: 600;
+  color: #FF0000;
+}
+@media (max-width: 1230px) {
+  .content {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 1024px) {
+  body.disabled {
+    overflow: hidden;
+  }
+  .icon {
+    display: block;
+  }
+  .icon.hide {
+    display: none;
+  }
+  .navbar .menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    /* max-width: 400px; */
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 60px 0;
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(200px);
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list {
+    left: 0%;
+  }
+  .navbar .menu-list li {
+    margin-top: 30px;
+  }
+  .navbar .menu-list .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .navbar .menu-list .social a {
+    padding: 15px;
+  }
+  .navbar .menu-list li a {
+    font-size: 25px;
+    /* margin-left: -100%; */
+    color: #900001;
+    transition: 0.6s;
+  }
+  .navbar.show .menu-list li a {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a {
+    font-size: 24px;
+  }
+}
